@@ -1,0 +1,73 @@
+$lightGray1 : #E9ECF2;
+$lightGray1Alpha4: rgba(233, 236, 242, .4);
+
+$darkGray1 : #434573;
+$darkGray2 : #585473;
+
+$black1 : #030526;
+$black2 : #01020D;
+
+$lightPurple1 : #A3A5D9;
+$lightPurple2 : #D5D7F2;
+$lightPurple3 : #BDBCFA;
+$lightPurple4 : #A9ABD9;
+
+$purple1 : #8679D9;
+$purple2 : #A37EF2;
+
+$bluePurple1 : #828FD9;
+$bluePurple2 : #3F59A6;
+$bluePurple3 : #626AD9;
+
+$yellow1 : #F7E5B0;
+$yellow2 : #F2DFA7;
+$yellow3 : #FAEF91;
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  font-family: 'S-CoreDream-3Light';
+  font-size: 1rem;
+  box-sizing: border-box;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+.header{
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  .headerTop{
+    display: flex;
+    .headerLogo{
+      img{
+        width: 100px;
+      }
+    }
+  }
+}
+.banner{
+  padding-top: 80px;
+}
+.main, .category{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  padding-left: 10vw;
+}
+.category{
+  padding-top: 80px;
+}
